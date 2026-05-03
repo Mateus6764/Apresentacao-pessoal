@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hobbies</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap CSS CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Apresentação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./hobby.html">Hobby</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="secao">
+            <h2 id="press">Música</h2>
+            <div class="conteudo-video">
+                <div>
+                    <h2>Siamés- Mr.Fear</h2>
+                    <div class="botao-container">
+                        <a class="botao" href="https://youtu.be/EKLWC93nvAU?si=ZqJGPB2mKZYWKbap" target="_blank">
+                        Veja no Youtube
+                        </a>
+                    </div>
+                </div>
+                <div class="clip">
+                    <video id="clip" width="640" height="360" controls>
+                        <source src="/content/siames.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeo HTML5.
+                        <track src="/content/siames.vtt" kind="subtitles" srclang="en" label="Inglês" default>
+                    </video>
+                </div>
+                
+            </div>
+        </section>
+        <section id="secao">
+             <h2 id="press">Locais</h2>
+            <div class="lugares">
+                <div class="conteudo-lugar">
+                    <h2>Farol de Santa Luzia</h2>
+                    <img src="/content/Farol.jpg">
+                </div>
+
+                <div class="conteudo-lugar">
+                    <h2>Morro do Moreno</h2>
+                    <img src="/content/morro do moreno.jpg">
+                </div>
+
+                <div class="conteudo-lugar">
+                    <h2>Praia Secreta</h2>
+                    <img src="/content/praia-secreta.jpg">
+                </div>
+            <div>
+        </section>
+        <section id="secao">
+            <h2 id="press">Minha Playlist</h2>
+
+           
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6fVuz3pPBuxKFiDhsFjV1i?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <ul class="playlist">
+                <li>Borderline - Tame Impala</li>
+                <li>It's Called: Freefall - Rainbow Kitten Surprise</li>
+                <li>Jealous - Eyedress</li>
+                <li>Alien Blues - Vundabar</li>
+                <li>Freaking Out the Neighborhood - Mac DeMarco</li>
+                <li>Dark Red - Steve Lacy</li>
+                <li>Monster - Skillet</li>
+                <li>Trigger Of Love - JAWNY</li>
+                <li>One More Hour - Tame Impala</li>
+                <li>Imagination - Foster The People</li>
+                <li>New Person, Same Old Mistakes - Tame Impala</li>
+                <li>Seventh Heaven - INOHA</li>
+                <li>Something About Us - Daft Punk</li>
+                <li>Mr. Fear - SIAMES</li>
+                <li>The Wolf - SIAMES</li>
+                <li>The Less I Know The Better - Tame Impala</li>
+                <li>Babydoll - Dominic Fike</li>
+                <li>Blue World - Mac Miller</li>
+                <li>Eventually - Tame Impala</li>
+                <li>Alone In The Darkness - SIAMES</li>
+                <li>Loser - Tame Impala</li>
+                <li>Crave You - Flight Facilities, Giselle</li>
+                <li>Hotel California (2013 Remaster) - Eagles</li>
+                <li>Let It Happen - Tame Impala</li>
+                <li>Notion - The Rare Occasions</li>
+                <li>Bad Habit - Steve Lacy</li>
+                <li>雷命 - サカナクション</li>
+                <li>Beat It - Michael Jackson</li>
+                <li>怪物 - YOASOBI</li>
+                <li>Run - Joji</li>
+                <li>Verbatim - Mother Mother</li>
+                <li>Like You Do - Joji</li>
+                <li>The God of Lying (feat. IDLES) - Gorillaz</li>
+                <li>Chicago - Michael Jackson</li>
+            </ul>
+        </section>
+
+        <section id="ranking">
+            <h2 id="press">Ranking Favoritos</h2>
+
+            <table class="tabela-ranking">
+                <tr>
+                    <th>Posição</th>
+                    <th>Nome</th>
+                    <th>Categoria</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Farol de Santa Luzia</td>
+                    <td>Lugar</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Monster - Skillet</td>
+                    <td>Música</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Interstellar</td>
+                    <td>Filme</td>
+                </tr>
+            </table>
+        </section>
+       
+
+        <footer>
+            <p>
+            Desenvolvido por Mateus Scardua
+            </p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/mateus-scardua-905393397/">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/mateusscardua/">Instagram</a></li>
+            </ul>
+            <p id="copy">&copy; 2026 Mateus Scardua  - Todos os direitos reservados.</p>
+        </footer>
+        <!-- Bootstrap JS CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

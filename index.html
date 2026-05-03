@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Apresentação</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Apresentação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./hobby.html">Hobby</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <h1 id="apresentacao">Apresentação</h1>
+        <section id="secao">
+            <h2 id="press">Mateus Scardua Porto</h2>
+
+            <div class="conteudo">
+                <img id="foto" src="/content/Mateus.jpg" alt="Foto do Mateus Scardua">
+                <p>
+                    Meus cumprimentos, sou o Mateus Scardua Porto, estudante de Engenharia de Software 
+                    na Universidade de Vila Velha.<br> Atualmente estou no 2° (Segundo) período do curso.<br>
+                    No momento trabalho com manutenção, montagem e limpeza de hardware de computadores
+                    em uma loja no centro de Vila Velha.
+
+                </p>
+            </div>
+        </section>
+
+        <div id="contato">
+            <h2>Entre em contato</h2>
+            <form action="https://formspree.io/f/meepjwoo" method="post">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea type="text" id="mensagem" name="mensagem" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>
+                Desenvolvido por Mateus Scardua
+            </p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/mateus-scardua-905393397/">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/mateusscardua/">Instagram</a></li>
+            </ul>
+            <p id="copy">&copy; 2026 Mateus Scardua  - Todos os direitos reservados.</p>
+        </footer>
+        <!-- Bootstrap JS CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
