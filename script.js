@@ -1,24 +1,29 @@
-// MODO ESCURO
-
 const themeButton = document.getElementById("theme-toggle");
+const body = document.getElementById("page-body");
 
-themeButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    if (themeButton) themeButton.innerHTML = "☀️";
+}
 
-    if (document.body.classList.contains("dark-mode")) {
-        themeButton.innerHTML = "☀️";
-    } else {
-        themeButton.innerHTML = "🌙";
-    }
-});
+if (themeButton) {
+    themeButton.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
 
-
-// FORMULÁRIO
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+            themeButton.innerHTML = "☀️";
+        } else {
+            localStorage.setItem("theme", "light");
+            themeButton.innerHTML = "🌙";
+        }
+    });
+}
 
 const form = document.getElementById("contact-form");
 
-form.addEventListener("submit", (event) => {
-    alert("Mensagem enviada com sucesso!");
-
-    form.reset();
-});
+if (form) {
+    form.addEventListener("submit", () => {
+        alert("Mensagem enviada com sucesso!");
+    });
+}
