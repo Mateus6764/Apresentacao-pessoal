@@ -322,3 +322,27 @@ footer ul {
     background-color: #f0f4ff;
     transition: 0.3s;
 }
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+}
+
+.dark-mode .card {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode section {
+    background-color: #121212;
+    color: white;
+}
